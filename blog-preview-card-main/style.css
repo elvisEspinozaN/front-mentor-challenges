@@ -83,3 +83,19 @@ body {
   font-weight: 800;
   font-size: 1rem;
 }
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 375px;
+    width: 375px;
+  }
+
+  .card-title {
+    transition: color 0.3s ease;
+  }
+
+  .card-title:hover {
+    color: var(--color-yellow);
+    cursor: pointer;
+  }
+}
