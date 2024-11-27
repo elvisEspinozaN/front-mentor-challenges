@@ -27,7 +27,7 @@ body {
   padding: 1.75rem;
   border-radius: 15px;
   width: 75%;
-  max-width: 375px;
+  max-width: 275px;
 }
 
 .header {
@@ -85,4 +85,13 @@ body {
   background-color: var(--color-green);
   color: var(--grey-900);
   cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 275px;
+    /* centering content */
+    margin: 0 auto;
+    padding: 2.2rem;
+  }
 }
