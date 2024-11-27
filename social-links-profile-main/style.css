@@ -1,0 +1,88 @@
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  font-size: 14px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: var(--grey-900);
+  padding: 1rem;
+  box-sizing: border-box;
+  color: var(--color-white);
+  /* centering card */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background-color: var(--grey-800);
+  padding: 1.75rem;
+  border-radius: 15px;
+  width: 75%;
+  max-width: 375px;
+}
+
+.header {
+  line-height: 0.75rem;
+}
+
+.header-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.header-title {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.header-location {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.75px;
+  margin-bottom: 1.5rem;
+}
+
+.header-description {
+  font-weight: 400;
+  font-size: 0.6rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.social-link {
+  /* stacked elemnts specifically nav */
+  display: block;
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 400;
+  padding: 0.75rem 2rem;
+  background-color: var(--grey-700);
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+  background-color: var(--color-green);
+  color: var(--grey-900);
+  cursor: pointer;
+}
