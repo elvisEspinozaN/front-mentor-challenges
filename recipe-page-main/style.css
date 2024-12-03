@@ -1,0 +1,149 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  /* background color */
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  /* default text color */
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+}
+
+/* young serif */
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* outfit */
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Regular.woff2") format("woff2"),
+    url("./assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf") format("woff2"),
+    url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Bold.woff2") format("woff2"),
+    url("./assets/fonts/outfit/static/Outfit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  color: var(--stone-600);
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 400;
+  background-color: var(--stone-100);
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  color: var(--brown-800);
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.header__title {
+  color: var(--stone-900);
+}
+
+.header__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  background-color: var(--color-white);
+  max-width: 375px;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.section {
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid var(--stone-150);
+  padding-bottom: 1.5rem;
+}
+
+.section--preparation {
+  margin-bottom: 2.4rem;
+  background-color: var(--rose-50);
+  padding: 1.2rem;
+  line-height: 1.6rem;
+  border-radius: 0.75rem;
+}
+
+.preparation__title {
+  font-size: 1.2rem;
+  font-family: "Outfit";
+  font-style: bold;
+  font-weight: 700;
+}
+
+.list {
+  padding: 0 1.5rem;
+}
+
+.list--ingredients {
+  line-height: 2rem;
+}
+
+.list--instructions {
+  line-height: 1.5rem;
+}
+
+.list--instructions li {
+  margin-bottom: 1rem;
+}
+
+.list--nutrition {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li-item {
+  display: flex;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.li-item:last-child {
+  border-bottom: none;
+}
+
+.nutrition-name {
+  flex: 2;
+  text-align: left;
+}
+
+.nutrition-value {
+  padding-right: 3.5rem;
+  color: var(--rose-800);
+  flex: 1;
+  text-align: left;
+}

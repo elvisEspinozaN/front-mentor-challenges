@@ -17,13 +17,13 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
+    <img
+      class="header__image"
+      src="./assets/images/image-omelette.jpeg"
+      alt=""
+    />
     <main class="container">
-      <header>
-        <img
-          class="header__image"
-          src="./assets/images/image-omelette.jpeg"
-          alt=""
-        />
+      <header class="header">
         <h1 class="header__title">Simple Omelette Recipe</h1>
         <p class="header__description">
           An easy and quick dish, perfect for any meal. This classic omelette
@@ -33,11 +33,11 @@
       </header>
       <!-- preparation time -->
       <section
-        class="section section--preparation"
+        class="section--preparation"
         aria-labelledby="preparation-time-title"
       >
-        <h2 class="preparation__title">Preparation Time</h2>
-        <ul class="list--preparation">
+        <h2 class="preparation__title">Preparation time</h2>
+        <ul class="list list--preparation">
           <li><strong>Total:</strong> Approximately 10 minutes</li>
           <li><strong>Preparation:</strong> 5 minutes</li>
           <li><strong>Cooking:</strong> 5 Minutes</li>
@@ -49,7 +49,7 @@
         aria-labelledby="ingredients-title"
       >
         <h2 class="section__title">Ingredients</h2>
-        <ul class="list">
+        <ul class="list list--ingredients">
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
@@ -62,7 +62,7 @@
       <!-- instructions -->
       <section class="section section--instructions">
         <h2 class="section__title">Instructions</h2>
-        <ol class="list">
+        <ol class="list list--instructions">
           <li role="listitem">
             <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
             pinch of salt and pepper until they are well mixed. You can add a
@@ -94,18 +94,30 @@
         </ol>
       </section>
       <!-- nutrition -->
-      <section class="section section--nutrition">
+      <section class="section--nutrition">
         <h2 class="section__title">Nutrition</h2>
         <p>
           The table below shows nutritional values per serving wihtout the
           additionalfillings.
         </p>
-        <ul class="list--nutrition">
-          <li><strong>Calories:</strong> 277kcal</li>
-          <li><strong>Carbs:</strong> 0g</li>
-          <li><strong>Protein:</strong> 20g</li>
-          <li><strong>Fat:</strong> 22g</li>
-        </ul>
+        <div class="list list--nutrition">
+          <div class="li-item">
+            <span class="nutrition-name">Calories</span>
+            <span class="nutrition-value"><strong>277kcal</strong></span>
+          </div>
+          <div class="li-item">
+            <span class="nutrition-name">Carbs</span>
+            <span class="nutrition-value"><strong>0g</strong></span>
+          </div>
+          <div class="li-item">
+            <span class="nutrition-name">Protein</span>
+            <span class="nutrition-value"><strong>20g</strong></span>
+          </div>
+          <div class="li-item">
+            <span class="nutrition-name">Fat</span>
+            <span class="nutrition-value"><strong>22g</strong></span>
+          </div>
+        </div>
       </section>
     </main>
   </body>
